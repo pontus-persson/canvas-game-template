@@ -2,11 +2,12 @@ import Utils from './utils';
 import Render from './render';
 
 class Game {
-  // Helper objects
+
+  // Submodules
   utils: Utils;
   render: Render;
 
-  constructor(params) {
+  constructor(params: any) {
     this.utils = new Utils();
     this.render = new Render(params.container);
   }
@@ -14,7 +15,7 @@ class Game {
   init() {
     console.log('init game');
 
-    this.render.init();
+    this.render.init(); 
 
 
   }
